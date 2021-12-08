@@ -1,3 +1,12 @@
+/*
+Colors used:
+Primary Color (Blue): #0c9edc;
+Secondary Color (Green): #0cdc9e;
+Contrast Colour (Pink): #ff55d1;
+Copy Colour (Dark Grey) # 333333;
+*/
+
 body{
-  background-color: #DAE9FF;
+  background-color: #E5E5E5;
+  font-family: 'Montserrat', sans-serif;
 }
