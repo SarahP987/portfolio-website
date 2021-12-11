@@ -110,15 +110,20 @@ a:focus {
 nav > ul {
   list-style-type: none;
   padding: 0;
+
 }
 nav > ul > li {
   display: inline-block
+
+
 }
 nav > ul > li > a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
+  width:100%;
+
 }
 #hero {
   background-color: #ffe4c4;
