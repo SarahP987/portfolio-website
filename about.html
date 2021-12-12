@@ -10,8 +10,8 @@
   </head>
   <body>
     <header>
-      <div class"logo">
-        <img src="img/water.mark.svg" alt="Sarah">
+      <div>
+        <img src="img/water.mark.svg" alt="Sarah" class="logo">
         <nav>
           <ul>
            <li><a href="index.html">Work</a></li>
@@ -22,26 +22,34 @@
       </div>
     </header>
     <main>
-      <div>
+      <div id="hero">
         <div class="container">
           <h1>About Me</h1>
         </div>
-        <div>
+        <div class="logo">
           <picture>
             <source srcset="img/sarah.photo.png" media="(max-width:800px)">
              <img src="img/sarah.photo.png" alt="My Image">
           </picture>
-          <div>
+          <div class="col-md-6">
             <div class="container">
               <h2>My Story</h2>
               <p>I have a background in marketing but am also trained in Web design, specialising in UX/ UI design and Front End Development. I am an underwater photographer and have a passion for exploring the unknown world below the surface of the ocean and showcasing its beauty.</p>
               <a href="files/cv.pdf" target="blank"download> Download My CV</a>
               <h2>Skills and Tools</h2>
                <h3> Relevent Skills</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="container">
                <ul>
                 <li><a href="#">UI Design</a></li>
                 <li><a href="#">UX Design</a></li>
                 <li><a href="#">Front End Development</a></li>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="container">
                <h3>Tools I use</h3>
                <ul>
                 <li><a href="#">Figma</a></li>

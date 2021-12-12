@@ -15,6 +15,7 @@ body{
   font-weight: 400; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #333333;
+
 }
 header {
   background-color: #C1DAFF;
@@ -44,6 +45,10 @@ h3 {
 }
 h4 {
   font-size: 1.35em;
+  font-weight: 400;
+}
+span {
+  font-size: 1.75em;
   font-weight: 400;
 }
 
@@ -78,6 +83,7 @@ a:focus {
   border-radius: 3px;
   border-bottom: 2px solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;
+  transition-property: opacity;
 }
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
@@ -100,8 +106,9 @@ a:focus {
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
-#hero h1 {
-  text-align: center; /* Centers text */
+#hero h1 h2 {
+  text-align: center;
+ /* Centers text */
 }
 .logo {
   max-width: 250px;
@@ -118,7 +125,7 @@ nav > ul > li {
 
 }
 nav > ul > li > a:visited {
-  padding: 0 15px;
+  padding: 90px 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
@@ -126,5 +133,84 @@ nav > ul > li > a:visited {
 
 }
 #hero {
-  background-color: #ffe4c4;
+  background-color: ##f5f5f5;
+}
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 13px 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  body {
+    font: 18px
+  }
+  #hero {
+    text-align: center;
+  }
+  .col-md-6 {
+  width: 50%;
+  }
+  [class*="col-"] {
+  float: left;
+  padding:10px
+  }
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
 }
