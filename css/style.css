@@ -25,6 +25,10 @@ header {
   text-align: center;
 
 }
+.hamburger-menu-icon{
+  display: block;
+  width: 25px;
+}
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -37,6 +41,7 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  text align; center;
 }
 
 h3 {
@@ -114,6 +119,11 @@ a:focus {
   max-width: 250px;
   text-align: center;
 }
+
+nav {
+  display: flex;
+}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -160,6 +170,14 @@ nav > ul > li > a:visited {
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+.hamburger-menu-icon{
+  display: block;
+  width: 25px;
+}
+
+
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -168,10 +186,15 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 13px 13px;
   }
+  nav > ul >li {
+    display: none;
+  }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
+
   }
   body {
     font: 18px
@@ -191,6 +214,15 @@ Medium devices (640px and larger)
   clear: both;
   display: table;
   }
+
+  .hamburger-menu-icon {
+    display: block;
+  }
+
+  .menu-visible{
+    display:block;
+  }
+
 
 }
 
